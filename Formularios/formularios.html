@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="
+	width=device-width, 
+	initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<fom action="javascript:recibeform()"method=
+	"post" autocomplete="off">
+	<!--<formaction="./procesaform.php"
+	method="post"
+	autocomplete="off"> -->
+
+	<form method="post" action="/send/">
+  		<input type="date" list="items" value="2024-02-23">
+  		<input type="time" value="11:00"
+         min="09:00" max="22:00" step="30">
+  <datalist id="items">
+    	<option value="2024-02-23">23 de Febrero</option>
+    	<option value="2024-03-23">23 de Marzo</option>
+   		<option value="2024-04-23">23 de Abril</option>
+  </datalist>
+</form>
+			
+	<form method="post" action="/send/">
+  		<input type="range" list="items" min="1" max="5" value="3">
+  		<output></output>
+  <datalist id="items">
+   			<option value="1">Muy satisfecho.</option>
+    		<option value="2">Satisfecho.</option>
+   			<option value="3">Indiferente.</option>
+    		<option value="4">Decepcionado.</option>
+    		<option value="5">Muy decepcionado.</option>
+  </datalist>
+</form>
+ 	
+	<label for="opciones">selecciona la opcion deseada</label>
+	<select name="opciones">
+		<option value="1">Opción 1</option>
+  		<option value="2">Opción 2</option>
+  		<option value="3"selected>Opción 3</option>
+  	</select>
+  	<br/><br/>
+
+  	<label for="edColor"> selecciona el color deseado:</label>
+  	<input type="color" name="edColor" value="#FF0000">
+  	<br/><br/>
+  	<input type="radio" name="category" value="user">particular 
+  	<input type="radio" name="category" value="business"> empresa 
+  	<br/><br/>
+<form method="post" action="/send/">
+  <fieldset>
+    Edad:
+    <input type="number" min="18" placeholder="18">
+  </fieldset>
+</form>
+		<form method="post" action="/send/">
+  Teléfono: <input type="tel" name="telefono" placeholder="+XX XXX XXXXXX">
+  Email: <input type="email" name="correo" placeholder="nombre@dominio.com">
+</form>
+	<form method="post" action="/send/">
+  <fieldset>
+    <legend>Datos personales</legend>
+    Nombre de usuario: <input placeholder="Por ej: John Smith">
+    Apellidos: <input type="text" placeholder="González" tabindex="2">
+    Edad: <input type="number" min="18" placeholder="18">
+
+</form>
+  </fieldset>
+
+  <fieldset>
+    <legend>Datos fiscales</legend>
+    <input type="radio" name="userdata" value="user"> Particular
+    <input type="radio" name="userdata" value="business"> Empresa/Autónomo
+  </fieldset>
+</form>
+		<br/>
+		<br/><br/>
+
+			<form method="post" action="/send/" enctype="multipart/form-data">
+ 				 Selecciona una foto para enviar:
+  			<input type="file" accept="image/jpeg">
+</form>
+
+		<form method="post" action="/send/" enctype="multipart/form-data">
+  Selecciona varias fotos para enviar:
+  <input type="file" accept="image/jpeg" multiple>
+</form>
+		<form method="post" action="/send/">
+  Usuario: <input name="usuario">
+  <input type="submit" value="Enviar formulario">
+</form>
+	<label for="Username">Username:<label><br>
+	<input type="text" id="Username"name="Username"><br>
+	<label for="pwd">pasword:</label><br>
+	<input type="password" id="pwd" name ="pwd">
+
+		<br/><br />
+		<input type="submit" value="Enviar" />
+		<input type="reset" value="reset">
+
+	</form>
+
+	<script type="text/javascript">
+		function recibeform(){
+			alert("formulario recibido");
+		}
+	
+	</script>
+</body>
+</html>
