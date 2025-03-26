@@ -16,39 +16,57 @@
 <body>
     <h2>Formulario con distintos tipos de input</h2>
     <form>
-        <label for="text">Texto:</label>
+        <label for="text">Nombre completo:</label>
         <input type="text" id="text" name="text" placeholder="Ingrese su nombre">
+        <br/><br/>
 
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+        <br/><br/>
 
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+        <br/><br/>
 
         <label for="number">Número:</label>
         <input type="number" id="number" name="number" min="0" max="100" placeholder="Ingrese un número">
+        <br/><br/>
 
-        <label for="date">Fecha:</label>
+        <label for="date">Fecha de nacimiento:</label>
         <input type="date" id="date" name="date">
+        <br/><br/>
 
         <label for="color">Color Favorito:</label>
         <input type="color" id="color" name="color">
+        <br/><br/>
 
         <label for="file">Subir Archivo:</label>
         <input type="file" id="file" name="file">
+        <br/><br/>
 
         <label for="range">Nivel de Satisfacción:</label>
         <input type="range" id="range" name="range" min="0" max="100">
+        <br/><br/>
 
         <label>Género:</label>
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Masculino</label>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Femenino</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">No binario</label>
+        <br/>
+        <label for="male">tu puedes ser lo que quieras ser</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Otros</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <br/><br/>
 
         <label for="checkbox">
-            <input type="checkbox" id="checkbox" name="terms"> Acepto los términos y condiciones
+            <label for="male">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="checkbox" name="terms">
         </label>
+        <br/><br/>
 
         <label for="select">Selecciona una opción:</label>
         <select id="select" name="select">
@@ -57,9 +75,10 @@
             <option value="opcion2">Opción 2</option>
             <option value="opcion3">Opción 3</option>
         </select>
+        <br/><br/>
 
         <label for="textarea">Comentarios:</label>
-        <textarea id="textarea" name="textarea" rows="4" placeholder="Ingrese sus comentarios"></textarea>
+        <textarea id="textarea" name="textarea" rows="4" placeholder="Pongame 10 profe, ceme santiago"></textarea>
 
         <button type="submit">Enviar</button>
     </form>
