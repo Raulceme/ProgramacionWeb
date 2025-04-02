@@ -1,0 +1,38 @@
+#contenedor_princ{
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	margin: 50px;
+	border: 15px dashed red;
+	background: blue;
+	box-sizing: content-box;
+	display: inline-block;
+}
+
+#contenedor_sec{
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	margin: 50px;
+	border: 15px dashed red;
+	background: black;
+	box-sizing: content-box;
+	display: inline-block;
+}
+
+#contenedor_hijo{
+	/*width: 100px;
+	height: 100px;
+	padding: 40px;
+	margin: 38px;*/
+	border: 15px groove red;
+	background: blue;
+	box-sizing: border-box;
+
+	overflow: scroll;
+	border-radius: 10px;
+}
+
+p{
+	display: inline;
+}

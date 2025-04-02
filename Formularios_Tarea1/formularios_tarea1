@@ -6,11 +6,32 @@
     <title>Controles de Entrada en HTML</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 60px; background-color: #f5f5dc; }
-        form { max-width: 500px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+        h2 {
+            text-align: center;
+            color: #4caf50;
+        }
+
+        form { max-width: 500px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin: 0 auto; }
+
         label { font-weight: bold; margin-top: 10px; display: block; }
-        input, select, textarea, button { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+
+        input, select, textarea, button { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+
         button { background-color: #28a745; color: white; font-size: 16px; border: none; cursor: pointer; padding: 10px; }
+
         button:hover { background-color: #218838; }
+
+        /* Modificación para el botón de selección de color */
+        input[type="color"] {
+            transform: scale(1.3); /* Aumenta el tamaño del selector */
+            -webkit-appearance: none; /* Elimina el estilo predeterminado */
+            height: 33px; /* Ajusta la altura */
+            width: 170px; /* Ajusta el ancho */
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -71,8 +92,8 @@
         <label for="select">Selecciona una opción:</label>
         <select id="select" name="select">
             <option value="">--Seleccione--</option>
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
+            <option value="opcion1">Ceme Santiago profe</option>
+            <option value="opcion2">Pongame 10</option>
             <option value="opcion3">Opción 3</option>
         </select>
         <br/><br/>
