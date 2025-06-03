@@ -1,0 +1,15 @@
+class Personaje {
+	name; //Propiedad sin definir (undefined)
+	type = "Player"; //Propiedad definida
+	lifes = 5; //Propiedad definida por 5 vias restantes
+	energy = 10; //Propiedad definida con 10 puntos de energia
+
+	constructor(name) {
+		name = name; //Modificamos el valor de la propiedad name
+		console.log(`!Bienvenido/a, ${this.name}!`); //Accedemos al valor de name
+	}
+
+	hola(){
+		return this.name;
+	}
+}

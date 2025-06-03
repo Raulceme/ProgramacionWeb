@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="biblioteca.js">
+	</script>
+	<title>Uso de clases JavaScript
+	</title>
+</head>
+<body>
+	<h1>Clases en JavaScript</h1>
+	<div id="divPoo"></div>
+	<hr>
+	<div id="divSegundo"></div>
+
+	<script>
+		const mario = new Personaje ("Mario"); // !Bienvenido/a Mario!
+
+		const divRes = document.querySelectorAll("div")[0]; //divPoo, divSegundo
+		if (divRes){ 
+			divRes.innerHTML = "Hola"
+			 +mario.hola();
+		}
+
+	</script>
+	
+</body>
+</html>

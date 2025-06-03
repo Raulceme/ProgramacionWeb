@@ -1,0 +1,43 @@
+/*.contenedor{
+  display: grid;
+  background: darkred;
+
+  grid-template-columns: repeat(4, 100px) 200px;
+  grid-template-rows: repeat(2, 1fr 2fr);
+
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-auto-flow: column;
+}
+*/
+.contenedor{
+  display: grid;
+  background: darkred;
+
+  grid-template-areas:"cabecera cabecera cabecera cabecera"
+                      "subcabecera subcabecera subcabecera subcabecera"
+                      "esq-inf-izq esq-inf-izq esq-inf-der esq-inf-der"
+                      "esq-inf-izq esq-inf-izq esq-inf-der esq-inf-der";
+
+  grid-template-columns: repeat(4, 100px) 200px;
+  grid-template-rows: repeat(2, 1fr 2fr);
+
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-auto-flow: row;
+}
+
+.item{
+  /*width: 70px;
+  height: 70px;
+  padding: 10px;*/
+  border: 4px solid slategray;
+  /*margin: 5px;*/
+  background-color: darkblue;
+
+}
+
+.item-1 { grid-area: cabecera; background: blue; }
+.item-2 { grid-area: subcabecera; background: red; }
+.item-3 { grid-area: esq-inf-izq; background: green; }
+.item-4 { grid-area: esq-inf-der; background: orange; }
